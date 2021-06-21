@@ -107,7 +107,6 @@ function drawChartDonut() {
 		
 		<option value="/admin/main?category=payment" <c:if test="${category eq 'payment'}">selected="selected"</c:if>>결제</option>
 		<option value="/admin/main?category=payback" <c:if test="${category eq 'payback'}">selected="selected"</c:if>>환불</option>
-		<option value="/admin/main?category=favorite" <c:if test="${category eq 'favorite'}">selected="selected"</c:if>>좋아요</option>
 		<option value="/admin/main?category=alarm" <c:if test="${category eq 'alarm'}">selected="selected"</c:if>>알림</option>
 	</select>
 	</div>
