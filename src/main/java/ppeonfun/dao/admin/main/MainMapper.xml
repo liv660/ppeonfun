@@ -41,10 +41,9 @@
   	</select>
   	
   	<select id="selectStatFavorite" resultType="hashmap">
-	  	SELECT i_category as category, sum(p_like) as count FROM project 
-		inner join information
-		on information.p_no = project.p_no
-		group by i_category
+	  	select i_category as category, count(*) as count FROM 
+	  	favorite inner join information 
+	  	on information.p_no = favorite.p_no group by i_category
   	</select>
   	
   	<select id="selectStatPayback" resultType="hashmap">
@@ -99,7 +98,7 @@
            FROM project 
            inner join information
            on information.p_no = project.p_no
-            order by p_like desc
+           order by p_like desc
     	) P
 	)R
 	WHERE rnum BETWEEN #{startNo} AND #{endNo}
