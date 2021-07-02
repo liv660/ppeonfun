@@ -17,7 +17,7 @@
 + `OS` Window 10 64bit, Mac
 + `WAS` Apache Tomcat 9.0
 + `DBMS` ORACLE 11g Express Edition Release 11.2.0
-+ `IDE` Eclipse 2020.12, Oracle SQL Developer
++ `IDE` Eclipse 2020.12
 + `Browser Support` Chrome
 + `Framework` Spring 5.3.7, Mybatis 3.5.7
 + `Design` bootstrap-3.3.2
@@ -39,3 +39,4 @@
 + commons-io 2.2
 + quartz-scheduler 2.3.0
 + JSTL 1.2
++ jQuery 2.2.4
